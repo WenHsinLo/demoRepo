@@ -9,4 +9,4 @@ def timemean(var):
     return np.nanmean(var,axis=0)
 
 def globalmean(var):
-    return np.mean(var)
+    return np.nanmean(var,axis=(1,2))
